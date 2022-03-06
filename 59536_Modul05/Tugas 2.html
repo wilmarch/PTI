@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TUGAS 2</title>
+    </head>
+<body>
+    <script>
+
+    jumlahMhs = window.prompt("jumlah");
+    for(i=1; i<=jumlahMhs; i++){
+        console.log('test');
+        nama = window.prompt('Nama');
+        uts = window.prompt('UTS');
+        uas = window.prompt('UAS');
+        tugas = window.prompt('Tugas');
+
+        document.write("<br /><br />" + i +". " + nama + "<br />");
+        document.write("Tugas: " + tugas);
+        document.write("<br />UTS: " + uts);
+        document.write("<br />UAS: " + uas);
+        document.write("<br />Nilai Akhir: " + hitungNilai (tugas, uts, uas));
+        document.write("<br />Grade: " + grade(hitungNilai(tugas, uts, uas)));
+    }
+
+    function grade(nilai){
+    if(nilai >= 85 && nilai <= 100) return "A";
+    else if (nilai >= 80) return "A-";
+    else if (nilai >= 75) return "B+";
+    else if (nilai >= 70) return "B";
+    else if (nilai >= 65) return "B-";
+    else if (nilai >= 60) return "C+";
+    else if (nilai >= 55) return "C";
+    else if (nilai >= 45) return "D";
+    else if (nilai >= 0) return "E";
+}
+
+function hitungNilai(tugas, uts, uas){
+    return 0.25*uts + 0.35*uas + 0.4*tugas;
+}
+
+    </script>
+</body>
+</html>

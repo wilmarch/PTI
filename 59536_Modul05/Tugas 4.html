@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TUGAS 4</title>
+    </head>
+    <body>
+        <script>
+           
+            var hitung=prompt("Selamat Datang, Anda ingin menghitung Luas atau Keliling? Silahkan isi pada kolom dibawah ini(menggunakan huruf kecil) :");
+            if(hitung == "luas"){
+                var Panjang=prompt("Masukkan Panjang (cm) : ");
+                var Lebar=prompt("Masukkan Lebar (cm) : ");
+                Luas=Panjang*Lebar;
+                alert("Luas = "+Panjang+"x"+Lebar+"="+Luas);
+            }else if(hitung == "keliling"){
+                var Panjang=prompt("Masukkan Panjang (cm) : ");
+                var Lebar=prompt("Masukkan Lebar (cm) : ");
+                Keliling=(2*Panjang)+(2*Lebar);
+                alert("Keliling = 2("+Panjang+"x"+Lebar+")="+Keliling);
+            }else{
+                alert("Penulisan Salah, Silahkan Coba Kembali . (Ketik luas untuk menghitung luas dan ketik keliling untuk menghitung keliling.)")
+            }
+        
+        </script>
+    </body>
+</html>
